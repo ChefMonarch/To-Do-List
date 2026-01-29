@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    background-image: url(Images/blueShadeBackground.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#title {
+    color: white;
+    border: 0.2em solid black;
+    border-radius: 0.2em;
+    font-family: 'Courier';
+}
+
+/* Button design for Add and Delete*/
+#addTaskBtn {
+    display: block;
+    margin: 20px;
+    padding: 10px 310px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    float: left;
+}
+#addTaskBtn:hover {
+    background-color: #47a34a;
+}
+#addTaskBtn:active {
+    background-color: #59c95d;
+}
+
+#deleteTaskBtn {
+    display: block;
+    margin: 20px;
+    padding: 10px 310px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    float: right;
+}
+#deleteTaskBtn:hover {
+    background-color: #47a34a;
+}
+#deleteTaskBtn:active {
+    background-color: #59c95d;
+}
+
+/* Pre set-up for element: textarea */
+textarea {
+    min-height: 200px;
+    min-width: 200px;
+    max-height: 200px;
+    max-width: 200px;
+    font-family: 'Verdana', 'Times New Roman', 'Arial';
+    font-size: 16px;
+    float: top;
+    float: left;
+    margin: 10px
+}
