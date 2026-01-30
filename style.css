@@ -1,6 +1,8 @@
-*{
+* {
     box-sizing: border-box;
 }
+
+/* Background */
 body {
     background-image: url(Images/blueShadeBackground.jpg);
     background-repeat: no-repeat;
@@ -9,61 +11,84 @@ body {
     background-size: cover;
 }
 
+/* Title */
 #title {
     color: white;
     border: 0.2em solid black;
     border-radius: 0.2em;
-    font-family: 'Courier';
+    font-family: Courier;
 }
 
-/* Button design for Add and Delete*/
+/* Add Task Button */
 #addTaskBtn {
     display: block;
-    margin: 20px;
-    padding: 10px 310px;
+    margin: 20px auto;
+    padding: 10px 300px;
     font-size: 16px;
     border-radius: 5px;
     border: none;
     background-color: #4CAF50;
     color: white;
     cursor: pointer;
-    float: left;
-}
-#addTaskBtn:hover {
-    background-color: #47a34a;
-}
-#addTaskBtn:active {
-    background-color: #59c95d;
 }
 
-#deleteTaskBtn {
+#addTaskBtn:hover { background-color: #47a34a; }
+#addTaskBtn:active { background-color: #59c95d; }
+
+/* Task container */
+.task {
+    display: inline-block;
+    margin: 8px;
+}
+
+/* Textarea */
+.inputArea {
     display: block;
-    margin: 20px;
-    padding: 10px 310px;
-    font-size: 16px;
-    border-radius: 5px;
     border: none;
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
-    float: right;
-}
-#deleteTaskBtn:hover {
-    background-color: #47a34a;
-}
-#deleteTaskBtn:active {
-    background-color: #59c95d;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    font-family: Verdana, Arial;
+    font-size: 16px;
+    float: left;
 }
 
-/* Pre set-up for element: textarea */
-textarea {
-    min-height: 200px;
-    min-width: 200px;
-    max-height: 200px;
-    max-width: 200px;
-    font-family: 'Verdana', 'Times New Roman', 'Arial';
-    font-size: 16px;
-    float: top;
+/* Buttons */
+.doneBtn {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    background-color: gold;
+    padding: 69px 10px;
     float: left;
-    margin: 10px
+    transform: translate(-1px, 1px);
+    cursor: pointer;
+}
+
+.deleteBtn {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(209, 41, 41);
+    color: white;
+    padding: 15px 7px;
+    float: left;
+    transform: translate(-53px, 155px);
+    cursor: pointer;
+}
+
+/* Hover + Active */
+.doneBtn:hover { background-color: rgb(255, 223, 0); }
+.deleteBtn:hover { background-color: red; }
+
+.doneBtn:active { background-color: rgb(255, 248, 104); }
+.deleteBtn:active { background-color: rgb(255, 69, 69); }
+
+/* Done state */
+.task.done {
+    opacity: 0.6;
+}
+
+.task.done .doneBtn {
+    background-color: green;
 }

@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KRV's To Do List </title>
+    <title>KRV's To Do List</title>
     <link rel="stylesheet" href="style.css">
     <script src="index.js" defer></script>
 </head>
 <body>
-    <h1 align="center" id="title">KRV's To Do List</h1>
-    
-    <!-- Button to add tasks -->
-    <button id="addTaskBtn" onclick="addTasks()">Add Task</button>
 
-    <!-- Button to delete tasks -->
-    <button id="deleteTaskBtn" onclick="deleteTasks()">Delete Task</button>
+    <h1 id="title" align="center">KRV's To Do List</h1>
 
-    <!-- Tasks will be appended here -->
-    <div id="taskContainer"></div>
+    <!-- Add task button -->
+    <button id="addTaskBtn">Add Task</button>
+
+    <!-- Task template -->
+    <div class="task">
+        <textarea class="inputArea" placeholder="Enter your task here" maxlength="1900"></textarea>
+
+        <button class="doneBtn">Done</button>
+        <button class="deleteBtn">Delete</button>
+    </div>
+
 </body>
 </html>
